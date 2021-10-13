@@ -3,16 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Final Presentation">
-    <meta name="keywords" content="Music, Band, Live tour, Tickets">
+    <meta name="keywords" content="Daft Punk, Band, Live tour, Music">
     <meta name="author" content="Mariam Mantashashvili">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/music.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Music</title>
+    <script src="https://kit.fontawesome.com/81d1da81c8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Daft Punk</title>
 </head>
 <body>
-    
+    <header class="header-wrapper">
+        <nav class="nav-bar">
+            <a href="index.html" class="logo">Method</a>
+            <ul class="nav-ul">
+                <li>
+                    <a href="bio.html" class="header-links">BAND</a>
+                </li>
+                <li>
+                    <a href="music.html" class="header-links">MUSIC</a>
+                </li>
+                <li>
+                    <a href="tour.html" class="header-links">TOUR</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="header-links">GALLERY</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="header-links">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <footer class="footer-wrapper">
+        <div class="icon-block">
+            <h2 class="icon-title">Follow Us:</h2>
+            <a href="https://www.facebook.com/daftpunk">
+                <i class="fab fa-facebook-f icon"></i>
+            </a>
+            <a href="https://twitter.com/giorgiomoroder">
+               <i class="fab fa-twitter icon"></i>
+            </a>
+            <a href="https://www.instagram.com/daftpunk/">
+                <i class="fab fa-instagram icon"></i>
+            </a>
+
+        </div>
+        <form action="" class="form-wrapper">
+            <div class="input-block">
+                <h2 class="footer-title">Contact Us</h2>
+                <input type="text" id="name" class="name-block" placeholder="Your Name">
+                <input type="email" id="email" class="email-block" placeholder="Your Email">
+                <button type="button" class="send-button">
+                    <a href="#" class="button-link">Send</a>
+                </button>    
+            </div>
+            <div class="message-block">
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </div>
+        </form>
+    </footer> 
  </body>
 </html>

@@ -1,15 +1,191 @@
-.body-wrapper {
-    background-image: url(https://www.pexels.com/video/playing-technology-morning-music-4210523/);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
+/* root */
+:root {
+    --color: #fff;
 }
-.video-block {
-    position: fixed;
-    background-size: contain;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+/* background image styles */
+.body-wrapper {
+    background-image: url(https://i.pinimg.com/originals/2e/be/f2/2ebef2221dbb042e5612f16c684f169d.gif);
+       box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 60%);
+}
+.bio-body-wrapper {
+    background-image: url(https://external-preview.redd.it/VfT01HC84Dy9eCQOE0E9kRCtfb1DQVaZnCwm0bhNZ58.png?width=640&crop=smart&auto=webp&s=6f32d28abda1b66b470e4108a68ed88c405ee18b);
+}
+.music-body-wrapper {
+    background-image: url(https://www.3wallpapers.fr/wp-content/uploads/2018/03/iPhone-wallpaper-daft-punk-flat.jpg);
+    background-position: center;
+}
+.body-wrapper, .bio-body-wrapper, .music-body-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 60%); */
+    max-width: 100%;
+    height: 100vh;
+}
+/* header styles */
+.header-wrapper {
+    max-width: 100%;
+    height: 150px;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+}
+.nav-ul {
+    display: flex;
+    align-items: center;
+}
+.header-links {
+    font-size: 18px;
+    color: var(--color);
+    font-family: 'Roboto', sans-serif;
+    margin-right: 60px;
+}
+.logo {
+    font-size: 36px;
+    color: var(--color);
+    font-family: 'Permanent Marker', cursive;
+}
+.header-links:hover {
+    font-size: 25px;
+}
+/* footer styles */
+.footer-wrapper {
+    height: 300px;
+    display: flex;
+}
+.icon-block {
+    height: 300px;
+    width: 150px;
+    margin-left: 200px;
+}
+.icon {
+    font-size: 30px;
+    color: var(--color);
+    margin-top: 15px;
+}
+.fa-twitter, .fa-instagram {
+    margin-left: 15px;
+}
+.icon-title {
+    color: var(--color);
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+.gif-block {
+    margin-left: 200px;
+}
+.form-wrapper {
+    display: flex;
+    margin-left: 200px;
+}
+.input-block {
+    display: flex;
+    flex-direction: column;
+}
+.email-block, .name-block, .send-button {
+    width: 260px;
+    height: 50px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: #99e6ff;
+    border-radius: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.email-block, .name-block {
+    padding-left: 10px;
+}
+#message {
+    background-color: #99e6ff;
+    height: 190px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 16px;
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    margin-top: 40px;
+}
+.button-link {
+    color: black;
+}
+.footer-title {
+    color: var(--color);
+    font-size: 33px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+/* section styles */
+.section-wrapper {
+    height: max-content;
+    width: max-content;
+    margin: 390px auto;
+}
+.title-block {
+    text-align: center;
+}
+.title {
+    font-size: 25px;
+    color: var(--color); 
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+.heading {
+    font-size: 90px;
+    color: var(--color);
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+.animate__animated {
+    animation-name: zoomIn;
+    animation-duration: 4s;
+    /* animation-delay: 0.9s; */
+}
+.button-block {
+    margin-top: 30px;
+}
+.button-box {
+    background-color: transparent;
+    border: solid 2px #f7c72a;
+    width: 190px;
+    height: 60px;
+    margin-left: 10px;
+}
+.button-links {
+    color: #f7c72a;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.button-box:hover {
+    border: solid 2px var(--color);
+}
+.button-box:hover .button-links {
+    color: #fff;
+}
+/* bio.html styles */
+.main-title {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 65px;
+}
+.main-title-block {
+    text-align: center;
+}
+.text-bar {
+    color: var(--color);
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+.text-bar-wrapper {
+    margin: 200px auto;
+    width: 1000px;
 }
